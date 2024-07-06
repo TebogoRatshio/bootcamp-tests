@@ -1,8 +1,9 @@
 describe("isFromBellville function", function () {
-    it("should be able to check CY 123 registration for me'", function() {
-        
-    it("should be able to check CY 123 registration for me'", function() {
+    it("should return true for CY 123", function () {
+        assert.equal(isFromBellville('CY 123'), true);
+    });
 
-        });
+    it("should return false for CJ 123", function () {
+        assert.equal(isFromBellville('CJ 123'), false);
     });
 });

@@ -1,8 +1,9 @@
-describe('yearsAgo function' , function() {
-    it('should return how many years ago that year is from the current year.' , function(){
+describe('yearsAgo function', function() {
+    it('should calculate how many years ago 1976 was', function() {
+        assert.equal(yearsAgo(1976), new Date().getFullYear() - 1976);
+    });
 
-    it("return how many years ago that year is from the current year.'", function() {
-
-        });
+    it('should calculate how many years ago 2000 was', function() {
+        assert.equal(yearsAgo(2000), new Date().getFullYear() - 2000);
     });
 });

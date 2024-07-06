@@ -1,4 +1,3 @@
-function greet(){
-    return "Hello, Tebogo";
-    return "Hello, Tshepo";
+function greet(name) {
+    return `Hello, ${name}`;
 }
